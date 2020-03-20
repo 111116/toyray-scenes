@@ -85,7 +85,8 @@
             "type": "mesh",
 			"file": "models/light.obj",
             "bsdf": "Light",
-			"sample": true
+			"sample": true,
+			"sampled_side": 1
         }
     ]
 }
