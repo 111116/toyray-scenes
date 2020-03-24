@@ -1,0 +1,1047 @@
+{
+    "media": [],
+    "bsdfs": [
+        {
+            "name": "Backdrop",
+            "albedo": 0.1,
+            "type": "lambert"
+        },
+        {
+            "name": "RoughAluminium",
+            "albedo": 0.578596,
+            "type": "rough_conductor",
+            "distribution": "ggx",
+            "roughness": 0.1,
+            "material": "Al"
+        },
+        {
+            "name": "RoughSteel",
+            "albedo": 1.0,
+            "type": "rough_conductor",
+            "distribution": "ggx",
+            "roughness": 0.1,
+            "eta": 2.0,
+            "k": 0.0
+        },
+        {
+            "name": "DarkPlastic",
+            "albedo": 0.01,
+            "type": "rough_plastic",
+            "ior": 1.5,
+            "thickness": 1.0,
+            "sigma_a": 0.0,
+            "distribution": "beckmann",
+            "roughness": 0.2
+        },
+        {
+            "name": "PinkLeather",
+            "albedo": [
+                0.25600001215934753,
+                0.013000000268220901,
+                0.07999999821186066
+            ],
+            "type": "rough_plastic",
+            "ior": 1.5,
+            "thickness": 1.0,
+            "sigma_a": 0.0,
+            "distribution": "beckmann",
+            "roughness": 0.4
+        },
+        {
+            "name": "Leather",
+            "albedo": [
+                0.03400000184774399,
+                0.014000000432133675,
+                0.00800000037997961
+            ],
+            "type": "rough_plastic",
+            "ior": 1.5,
+            "thickness": 1.0,
+            "sigma_a": 0.0,
+            "distribution": "beckmann",
+            "roughness": 0.4
+        },
+        {
+            "name": "RedLeather",
+            "albedo": [
+                0.16300000250339508,
+                0.029999999329447746,
+                0.03700000047683716
+            ],
+            "type": "rough_plastic",
+            "ior": 1.5,
+            "thickness": 1.0,
+            "sigma_a": 0.0,
+            "distribution": "beckmann",
+            "roughness": 0.4
+        },
+        {
+            "name": "BrightPinkLeather",
+            "albedo": [
+                0.7720000147819519,
+                0.17499999701976776,
+                0.2619999945163727
+            ],
+            "type": "rough_plastic",
+            "ior": 1.5,
+            "thickness": 1.0,
+            "sigma_a": 0.0,
+            "distribution": "beckmann",
+            "roughness": 0.4
+        },
+        {
+            "name": "Glass",
+            "albedo": 1.0,
+            "type": "rough_dielectric",
+            "ior": 1.5,
+            "distribution": "ggx",
+            "enable_refraction": true,
+            "roughness": 0.01
+        },
+        {
+            "name": "DarkRubber",
+            "albedo": 0.025,
+            "type": "rough_plastic",
+            "ior": 1.5,
+            "thickness": 1.0,
+            "sigma_a": 0.0,
+            "distribution": "ggx",
+            "roughness": 0.4
+        },
+        {
+            "name": "Black",
+            "albedo": 1.0,
+            "type": "null"
+        }
+    ],
+    "primitives": [
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": false,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh050.obj",
+            "bsdf": "Backdrop"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": false,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh042.obj",
+            "bsdf": "RoughAluminium"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": false,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh044.obj",
+            "bsdf": "Leather"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": false,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh038.obj",
+            "bsdf": "RoughAluminium"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": true,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh040.obj",
+            "bsdf": "RoughAluminium"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": true,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh072.obj",
+            "bsdf": "RoughAluminium"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": true,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh033.obj",
+            "bsdf": "RoughSteel"
+        },
+        {
+            "transform": {},
+            "emission": [
+                20.0,
+                3.0,
+                3.0
+            ],
+            "type": "mesh",
+            "smooth": true,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh043.obj",
+            "bsdf": "Black"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": true,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh028.obj",
+            "bsdf": "Leather"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": true,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh055.obj",
+            "bsdf": "RedLeather"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": true,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh053.obj",
+            "bsdf": "DarkPlastic"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": true,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh036.obj",
+            "bsdf": "RedLeather"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": true,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh035.obj",
+            "bsdf": "PinkLeather"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": true,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh031.obj",
+            "bsdf": "RedLeather"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": true,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh030.obj",
+            "bsdf": "PinkLeather"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": false,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh027.obj",
+            "bsdf": "RoughAluminium"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": false,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh064.obj",
+            "bsdf": "RoughSteel"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": true,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh058.obj",
+            "bsdf": "RoughSteel"
+        },
+        {
+            "transform": {},
+            "emission": [
+                3.886280059814453,
+                3.772550106048584,
+                3.4313700199127197
+            ],
+            "type": "mesh",
+            "smooth": true,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh029.obj",
+            "bsdf": "null"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": true,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh080.obj",
+            "bsdf": "Black"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": false,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh067.obj",
+            "bsdf": "RoughAluminium"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": true,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh060.obj",
+            "bsdf": "RoughAluminium"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": false,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh026.obj",
+            "bsdf": "RoughSteel"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": true,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh047.obj",
+            "bsdf": "RoughSteel"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": true,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh061.obj",
+            "bsdf": "DarkPlastic"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": true,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh063.obj",
+            "bsdf": "DarkRubber"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": false,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh065.obj",
+            "bsdf": "RoughAluminium"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": true,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh048.obj",
+            "bsdf": "RoughAluminium"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": true,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh066.obj",
+            "bsdf": "RoughAluminium"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": true,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh068.obj",
+            "bsdf": "DarkRubber"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": true,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh071.obj",
+            "bsdf": "RoughSteel"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": false,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh046.obj",
+            "bsdf": "RoughAluminium"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": false,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh076.obj",
+            "bsdf": "RoughAluminium"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": true,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh059.obj",
+            "bsdf": "RoughAluminium"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": true,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh057.obj",
+            "bsdf": "RoughAluminium"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": false,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh062.obj",
+            "bsdf": "RoughAluminium"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": false,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh074.obj",
+            "bsdf": "RoughAluminium"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": false,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh075.obj",
+            "bsdf": "RoughAluminium"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": false,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh078.obj",
+            "bsdf": "RoughAluminium"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": false,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh081.obj",
+            "bsdf": "RoughAluminium"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": false,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh034.obj",
+            "bsdf": "RoughAluminium"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": false,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh084.obj",
+            "bsdf": "RoughAluminium"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": false,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh085.obj",
+            "bsdf": "RoughAluminium"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": false,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh073.obj",
+            "bsdf": "RoughAluminium"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": false,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh077.obj",
+            "bsdf": "RoughAluminium"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": false,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh087.obj",
+            "bsdf": "RoughAluminium"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": true,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh052.obj",
+            "bsdf": "RoughAluminium"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": false,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh025.obj",
+            "bsdf": "RoughAluminium"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": false,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh024.obj",
+            "bsdf": "RoughAluminium"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": false,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh086.obj",
+            "bsdf": "RoughAluminium"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": true,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh023.obj",
+            "bsdf": "RoughAluminium"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": true,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh021.obj",
+            "bsdf": "RoughAluminium"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": true,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh039.obj",
+            "bsdf": "RoughAluminium"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": true,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh020.obj",
+            "bsdf": "RoughAluminium"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": true,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh032.obj",
+            "bsdf": "RoughAluminium"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": true,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh019.obj",
+            "bsdf": "RoughSteel"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": false,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh018.obj",
+            "bsdf": "RoughAluminium"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": false,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh070.obj",
+            "bsdf": "RoughAluminium"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": false,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh016.obj",
+            "bsdf": "RoughAluminium"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": false,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh015.obj",
+            "bsdf": "RoughAluminium"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": false,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh054.obj",
+            "bsdf": "RoughAluminium"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": false,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh013.obj",
+            "bsdf": "RoughAluminium"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": false,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh079.obj",
+            "bsdf": "RoughAluminium"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": false,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh041.obj",
+            "bsdf": "RoughAluminium"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": false,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh012.obj",
+            "bsdf": "RoughAluminium"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": false,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh011.obj",
+            "bsdf": "RoughAluminium"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": false,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh083.obj",
+            "bsdf": "RoughAluminium"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": false,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh010.obj",
+            "bsdf": "RoughAluminium"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": false,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh069.obj",
+            "bsdf": "RoughAluminium"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": false,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh009.obj",
+            "bsdf": "RoughAluminium"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": false,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh007.obj",
+            "bsdf": "RoughAluminium"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": false,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh017.obj",
+            "bsdf": "RoughAluminium"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": false,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh006.obj",
+            "bsdf": "RoughSteel"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": true,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh037.obj",
+            "bsdf": "RoughAluminium"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": true,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh008.obj",
+            "bsdf": "RoughSteel"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": true,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh045.obj",
+            "bsdf": "RoughSteel"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": true,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh005.obj",
+            "bsdf": "RoughAluminium"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": true,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh004.obj",
+            "bsdf": "RoughAluminium"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": true,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh049.obj",
+            "bsdf": "RoughSteel"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": true,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh082.obj",
+            "bsdf": "RoughSteel"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": true,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh014.obj",
+            "bsdf": "RoughSteel"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": false,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh003.obj",
+            "bsdf": "RoughSteel"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": true,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh002.obj",
+            "bsdf": "RoughAluminium"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": true,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh051.obj",
+            "bsdf": "RoughSteel"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": true,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh001.obj",
+            "bsdf": "Glass"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": true,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh056.obj",
+            "bsdf": "RoughAluminium"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": true,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh000.obj",
+            "bsdf": "BrightPinkLeather"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": true,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh022.obj",
+            "bsdf": "RedLeather"
+        },
+        {
+            "transform": {
+                "position": [
+                    0.0,
+                    5.144720077514648,
+                    1.6107900142669678
+                ],
+                "scale": [
+                    4.099460124969482,
+                    1.2728500366210938,
+                    1.2728500366210938
+                ],
+                "rotation": [
+                    0.0,
+                    -179.99998474121094,
+                    179.99998474121094
+                ]
+            },
+            "emission": [
+                9.0,
+                9.0,
+                10.0
+            ],
+            "type": "quad",
+            "bsdf": "null"
+        },
+        {
+            "transform": {
+                "position": [
+                    0.0,
+                    5.144720077514648,
+                    -1.6107900142669678
+                ],
+                "scale": [
+                    4.099460124969482,
+                    1.2728500366210938,
+                    1.2728500366210938
+                ],
+                "rotation": [
+                    0.0,
+                    -179.99998474121094,
+                    179.99998474121094
+                ]
+            },
+            "emission": [
+                9.0,
+                9.0,
+                10.0
+            ],
+            "type": "quad",
+            "bsdf": "null"
+        },
+        {
+            "transform": {
+                "position": [
+                    0.0,
+                    39.20000076293945,
+                    -30.20800018310547
+                ],
+                "scale": 78.4719009399414,
+                "rotation": [
+                    -90.0,
+                    0.0,
+                    0.0
+                ]
+            },
+            "type": "quad",
+            "bsdf": "Backdrop"
+        }
+    ],
+    "emissions": [
+        {
+            "type": "constant",
+            "radiance": 0.3,
+            "sample": false
+        }
+    ],
+    "camera": {
+        "tonemap": "filmic",
+        "resolution": [
+            1280,
+            720
+        ],
+        "reconstruction_filter": "tent",
+        "transform": {
+            "position": [
+                -0.5196635723114014,
+                0.8170070052146912,
+                3.824389696121216
+            ],
+            "look_at": [
+                -0.0668703019618988,
+                0.6448959708213806,
+                0.5292789936065674
+            ],
+            "up": [
+                0.0,
+                1.0,
+                0.0
+            ]
+        },
+        "type": "pinhole",
+        "fov": 60.0
+    },
+    "integrator": {
+        "min_bounces": 0,
+        "max_bounces": 64,
+        "enable_consistency_checks": false,
+        "enable_two_sided_shading": true,
+        "type": "path_tracer",
+        "enable_light_sampling": true,
+        "enable_volume_light_sampling": true
+    },
+    "renderer": {
+        "overwrite_output_files": true,
+        "adaptive_sampling": true,
+        "enable_resume_render": false,
+        "stratified_sampler": true,
+        "scene_bvh": true,
+        "spp": 64,
+        "spp_step": 16,
+        "checkpoint_interval": "0",
+        "timeout": "0",
+        "output_file": "spaceship.png",
+        "resume_render_file": "TungstenRenderState.dat",
+        "hdr_output_file": "spaceship.exr"
+    }
+}
