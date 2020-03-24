@@ -1,0 +1,187 @@
+{
+    "integrator": {
+        "max_bounces": 64
+    },
+    "renderer": {
+        "spp": 4,
+        "output_files": ["living-room.png", "living-room.exr"]
+    },
+    "bsdfs": [
+        {
+            "name": "Dirt",
+            "albedo": [
+                0.09850399941205978,
+                0.04596799984574318,
+                0.03588699921965599
+            ],
+            "type": "lambert"
+        },
+        {
+            "name": "Floor",
+            "albedo": "textures/wood.jpg",
+            "type": "rough_plastic",
+            "ior": 1.5,
+            "thickness": 1.0,
+            "sigma_a": 0.0,
+            "distribution": "ggx",
+            "roughness": 0.15
+        },
+        {
+            "name": "TableWood",
+            "albedo": "textures/wood5.jpg",
+            "type": "rough_plastic",
+            "ior": 1.5,
+            "thickness": 1.0,
+            "sigma_a": 0.0,
+            "distribution": "ggx",
+            "roughness": 0.05
+        },
+        {
+            "name": "Sofa",
+            "albedo": 1.0,
+            "type": "lambert"
+        },
+        {
+            "name": "SofaLegs",
+            "albedo": 0.1,
+            "type": "lambert"
+        },
+        {
+            "name": "Walls",
+            "albedo": 0.1,
+            "type": "lambert"
+        },
+        {
+            "name": "Paneling",
+            "albedo": 0.8,
+            "type": "rough_plastic",
+            "ior": 1.5,
+            "thickness": 1.0,
+            "sigma_a": 0.0,
+            "distribution": "ggx",
+            "roughness": 0.2
+        },
+        {
+            "name": "Mirror",
+            "albedo": 0.578596,
+            "type": "mirror"
+        },
+        {
+            "name": "BrushedStainlessSteel",
+            "albedo": 0.578596,
+            "type": "rough_conductor",
+            "distribution": "ggx",
+            "roughness": 0.02,
+            "material": "Al"
+        },
+        {
+            "name": "MattePaint",
+            "albedo": 0.578596,
+            "type": "lambert"
+        },
+        {
+            "name": "Painting",
+            "albedo": "textures/picture8.jpg",
+            "type": "lambert"
+        },
+        {
+            "name": "PaintingBack",
+            "albedo": [
+                0.25999999046325684,
+                0.25,
+                0.14000000059604645
+            ],
+            "type": "lambert"
+        },
+        {
+            "name": "Glass",
+            "albedo": 1.0,
+            "type": "dielectric",
+            "ior": 1.5,
+            "enable_refraction": true
+        },
+        {
+            "name": "PlantPot",
+            "albedo": 0.1,
+            "type": "oren_nayar",
+            "roughness": 1.0
+        },
+        {
+            "name": "FireplaceGlass",
+            "albedo": 0.1,
+            "type": "mirror"
+        },
+        {
+            "name": "Transluscent",
+            "albedo": 0.9,
+            "type": "lambert"
+        },
+        {
+            "name": "Leaves",
+            "albedo": 1.0,
+            "type": "transparency",
+            "base": {
+                "albedo": "textures/leaf.png",
+                "type": "lambert"
+            },
+            "alpha": "textures/leaf.png"
+        },
+        {
+            "name": "Branches",
+            "albedo": [
+                0.160443514585495,
+                0.08241420984268188,
+                0.019917838275432587
+            ],
+            "type": "lambert"
+        },
+        {
+            "name": "BottleCap",
+            "albedo": [
+                0.4562634229660034,
+                0.0,
+                0.0
+            ],
+            "type": "lambert"
+        }
+    ],
+    "primitives": [
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": false,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh023.obj",
+            "bsdf": "Painting"
+        }
+    ],
+    "emissions": [
+        {
+            "type": "envmap",
+            "radiance": "textures/Sky 19.exr"
+        }
+    ],
+    "camera": {
+        "resolution": [ 1280, 720 ],
+        "transform": {
+            "position": [
+                5.105184555053711,
+                0.7310651540756226,
+                -2.3178906440734863
+            ],
+            "look_at": [
+                1.452592134475708,
+                1.0136401653289795,
+                -1.3172874450683594
+            ],
+            "up": [
+                0.0,
+                1.0,
+                0.0
+            ]
+        },
+        "type": "pinhole",
+        "fov": 90.0
+    }
+}
